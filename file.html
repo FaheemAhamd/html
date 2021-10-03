@@ -13,7 +13,33 @@
         *{
         box-sizing: border-box; 
         }
-    </style>
+        .container{
+            padding: 16px;
+            background-color: white;
+        }
+        input[type=text],input[type=email],input[type=password]{
+            width: 100%;
+            padding: 15%;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            outline: none;
+            background: whitesmoke;
+
+        }
+        input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+            background-color: white;
+            outline: none;
+        }
+.registerbtn{
+    background-color: turquoise;
+    color: 16px 20px;
+    margin: 8px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+          </style>
 </head>
 <body>
     <div class="container">
@@ -31,7 +57,7 @@
     <label>Re-password</label>
     <input type="password" placeholder="Re-password">
     <p>By creating an account you agree to our <a href="#">Terms and privacy</a></p>
-    <button>Sign Up</button>
+    <button class="registerbtn">Sign Up</button>
     <p>Already have an account?<a href="a"></a></p>
 </div>
 </form>
